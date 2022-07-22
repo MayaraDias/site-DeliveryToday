@@ -44,6 +44,7 @@ img {
 /*<========= NAV ============>*/
 
 nav {
+  width: 100vw;
   height: 7.2rem;
   margin: auto;
   padding: 1.6rem 0;
@@ -57,11 +58,10 @@ nav {
 }
 
 nav .wrapper {
-  width: 100vw;
   display: flex;
   gap: 4rem;
   align-items: center;
-  padding: 0 4rem;
+  padding-inline: 1.4rem;
 }
 
 .openMenu,
@@ -342,3 +342,5 @@ body.menuExpande .menu .login:hover {
 }
 
 /*<============ MEDIA QUERIES / VERSÃO DESKTOP =============>*/
+@media (min-width: 700px) {
+}
