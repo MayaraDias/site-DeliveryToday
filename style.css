@@ -209,8 +209,71 @@ nav .wrapper {
     transform: translateY(0);
   }
   to {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
+}
+/*<====== SECTION CONTACT =====>*/
+#contact {
+  padding-block: 3rem;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: 2rem auto;
+  color: black;
+}
+
+.contactUs {
+  background-color: var(--secondy-color);
+  border: none;
+  border-radius: 5rem;
+  padding: 2rem 2.5rem;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.contactUs:hover {
+  background-color: hsl(25 95% 54%);
+}
+/*<=========== FOOTER =========>*/
+footer {
+  background-color: var(--primary-color);
+  height: 10rem;
+  padding: 3rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 2.5rem;
+}
+
+footer span {
+  position: fixed;
+  left: 22.2rem;
+  top: 48rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialLinks a {
+  font-size: 2rem;
+  color: white;
+}
+
+.socialLinks li:hover {
+  animation: jump 1s ease-in-out alternate infinite;
 }
 
 /*<======== MENU - EXPANDE ========>*/
