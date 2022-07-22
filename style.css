@@ -61,7 +61,6 @@ nav .wrapper {
   display: flex;
   gap: 4rem;
   align-items: center;
-  padding-inline: 1.4rem;
 }
 
 .openMenu,
