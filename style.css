@@ -45,7 +45,6 @@ img {
 
 nav {
   height: 7.2rem;
-  width: 37.5rem;
   margin: auto;
   padding: 1.6rem 0;
   position: fixed;
@@ -58,9 +57,11 @@ nav {
 }
 
 nav .wrapper {
+  width: 100vw;
   display: flex;
   gap: 4rem;
   align-items: center;
+  padding: 0 4rem;
 }
 
 .openMenu,
@@ -79,7 +80,7 @@ nav .wrapper {
   content: '';
   position: absolute;
   top: 5rem;
-  width: 37.5rem;
+  width: 100vw;
   height: 40rem;
   background-color: var(--primary-color);
   z-index: -1;
@@ -339,3 +340,5 @@ body.menuExpande .login {
 body.menuExpande .menu .login:hover {
   background-color: hsl(25 95% 54%);
 }
+
+/*<============ MEDIA QUERIES / VERSÃO DESKTOP =============>*/
