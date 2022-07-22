@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --hue: 225;
+  --primary-color: hsl(var(--hue) 60% 51%);
+  --secondy-color: hsl(calc(var(--hue) - 200) 94% 50%);
+  --title-color: ;
+  --text-color: ;
+
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.logo {
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.section {
+  padding-top: 7rem;
+}
+
+/*<========= NAV ============>*/
+
+nav {
+  height: 7.2rem;
+  width: 37.5rem;
+  margin: auto;
+  padding: 1.6rem 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+  display: flex;
+  background-color: var(--primary-color);
+}
+
+nav .wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.openMenu,
+.closeMenu {
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/*========== SECTION HOME =========>*/
+#home::before {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  width: 37.5rem;
+  height: 40rem;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+#home .wrapper {
+  padding: 2rem 2rem;
+}
+
+#home h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: 2rem auto;
+  color: white;
+}
+
+#home p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 5rem;
+  width: 25rem;
+  cursor: pointer;
+}
+
+.buy {
+  background-color: transparent;
+  border: 1px solid var(--secondy-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buy:hover,
+.yourOrder:hover {
+  background-color: var(--secondy-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.yourOrder {
+  background-color: transparent;
+  border: 1px solid var(--secondy-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*<=========SECTION ABOUTUS =======>*/
+#aboutUs h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: 2rem auto;
+  color: black;
+}
+
+#aboutUs p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: black;
+  opacity: 0.8;
+}
+
+.arrowleft a {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: var(--secondy-color);
+}
+
+.arrowleft:hover {
+  animation: movedLeft 1s ease-in-out alternate infinite;
+}
+
+@keyframes movedLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+/*<======== SECTION SERVICES ======>*/
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.cards img {
+  width: 25rem;
+}
+
+.card p {
+  font-size: 2rem;
+  color: black;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.09);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.3rem 0.3rem 0 0;
+  text-align: center;
+}
+
+.card:hover {
+  animation: jump 1s ease-in-out alternate infinite;
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/*<======== MENU - EXPANDE ========>*/
+
+.menu,
+.closeMenu,
+body.menuExpande .openMenu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menuExpande .closeMenu,
+body.menuExpande .menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menuExpande .logo,
+body.menuExpande .closeMenu i {
+  position: relative;
+  z-index: 100;
+  color: white;
+}
+
+body.menuExpande .menu {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+  transform: translateY(0);
+  transition: transform 300ms;
+}
+
+body.menuExpande .menuNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  margin-top: 15rem;
+}
+
+body.menuExpande .menuNavigation li a {
+  color: white;
+  font-size: 2.5rem;
+}
+
+body.menuExpande .login {
+  display: grid;
+  background-color: var(--secondy-color);
+  text-align: center;
+  width: 15rem;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  margin: 5rem auto;
+  color: white;
+  font-size: 2rem;
+}
+
+body.menuExpande .menu .login:hover {
+  background-color: hsl(25 95% 54%);
+}

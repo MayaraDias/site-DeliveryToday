@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@7q
+      00&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Today Delivery</title>
+  </head>
+
+  <body class="">
+    <nav>
+      <div class="wrapper">
+        <div>
+          <a class="logo" href="#">DeliveryToday</a>
+        </div>
+
+        <div class="menu">
+          <ul class="menuNavigation">
+            <li><a onclick="menuClose()" href="#home">Home</a></li>
+            <li><a onclick="menuClose()" href="#aboutUs">Sobre nós</a></li>
+            <li><a onclick="menuClose()" href="#services">Serviços</a></li>
+            <li><a onclick="menuClose()" href="#Contact">Contato</a></li>
+          </ul>
+
+          <a href="#" class="login">Cadastro</a>
+        </div>
+
+        <button
+          onclick="menuOpen()"
+          aria-expanded="false"
+          aria-label="Abrir Menu"
+          class="openMenu"
+        >
+          <i class="uil uil-list-ui-alt"></i>
+        </button>
+
+        <button
+          onclick="menuClose()"
+          aria-expanded="true"
+          aria-label="Fechar Menu"
+          class="closeMenu"
+        >
+          <i class="uil uil-times"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section" id="home">
+        <div class="wrapper">
+          <h2>Peça! E levamos sua comida até a sua porta</h2>
+          <p>
+            Você pode pedir a qualquer hora, que sempre temos um parceiro
+            entregador próximo a você
+          </p>
+
+          <img src="./assets/home-delivery.png" alt="" />
+
+          <button class="button buy">Pedir agora</button>
+          <button class="button yourOrder">Acompanhe seu pedido</button>
+        </div>
+      </section>
+
+      <section class="section" id="aboutUs">
+        <div class="wrapper">
+          <h2>Somos os melhores da cidade</h2>
+          <p>
+            Temos + 5000 comentários positivos. Nossos clientes confiam em nosso
+            serviço de comida e entrega. Você pode ler mais sobre nossa empresa
+          </p>
+        </div>
+        <div class="wrapper arrowleft">
+          <a href="#"><i class="uil uil-arrow-circle-right"></i></a>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="wrapper">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/ice-cream.png" alt="" />
+              <p>Escolha sua comida favorita</p>
+            </div>
+            <div class="card">
+              <img src="./assets/deliveryScooter.png" alt="" />
+              <p>Levamos até você</p>
+            </div>
+            <div class="card">
+              <img src="./assets/app.png" alt="" />
+              <p>Deixe sua avaliação</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
